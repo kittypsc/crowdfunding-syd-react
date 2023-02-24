@@ -1,0 +1,38 @@
+.projects-2 img{
+    display: inline;
+    justify-content: center;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .all-projects-1 a{
+    text-decoration: none;
+    color: rgb(34, 91, 41);
+    background-color: #000;
+   
+  }
+
+  .all-projects{
+    display: flex;
+    border-bottom: 2px solid #000;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .all-projectsb{
+    padding: 10;
+    margin: 0;
+  }
+
+  .all-projectsb h6{
+    color: rgb(245, 175, 189);
+    font-size: 14px;
+
+  }
+
+  .all-projectsb p{
+    color: #000;
+    font-size: 14px;
+
+  }

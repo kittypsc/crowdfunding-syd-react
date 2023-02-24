@@ -1,0 +1,353 @@
+
+
+body {
+  margin: 0 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+
+}
+
+.main{
+  justify-content: center;
+  display: flex;
+  width: 450px;
+  height: 450px;
+  /* position: relative; */
+}
+
+.body-text{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  position: relative;
+  color: rgb(34, 91, 41);
+}
+
+.body-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-2{
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(159, 211, 124);
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn-2 a {
+    color: rgb(34, 91, 41);
+    text-decoration: none;
+    font-weight: 900;
+    align-items: center;
+}
+
+.icon-well{
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+  align-items: center;
+}
+
+/* project page */
+
+.project-block{
+  display: flex;
+  justify-content: center;
+}
+
+.block1{
+  margin: 0px;
+  display:flex;
+  position: relative;
+  justify-content: center;
+
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin-top: 40px;
+
+}
+
+.block1-one{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 5px;
+  background-color: rgb(216, 212, 212);
+  width: 220px;
+  height: 215px;
+  border-radius: 15px;
+}
+
+.block1-two{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 91, 41);
+  width: 220px;
+  height: 215px;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+  text-align: center;
+}
+
+.block1-three{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 5px;
+  margin-top: 5px;
+  background-color: rgb(213, 189, 34);
+  color: white;
+  text-align: center;
+  width: 220px;
+  height: 215px;
+  border-radius: 15px;
+  margin-left: 0;
+}
+
+.block1-four{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 175, 189);
+  width: 220px;
+  height: 215px;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px;
+  margin-left: 0px;
+}
+
+.block2{
+  background-color: rgb(171, 222, 151);
+  margin: 0px;
+  display:flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 480px;
+  height: 452px;
+  padding: 20px;
+  margin-top: 63px;
+  border-radius: 15px;
+}
+
+.block2 h3{
+  color: rgb(34, 91, 41);
+  margin: 10px;
+}
+
+.block2 h6{
+  font-size: 15px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.block2 p{
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: rgb(100, 99, 99);
+}
+
+.profilepic img{
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+}
+
+.heart-icon{
+  color:rgb(196, 53, 115);
+ font-size: 70px;
+}
+
+.well{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 100px;
+  height: 110px;
+}
+
+.block2-btns{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-3{
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(34, 91, 41);
+  font-weight: 800;
+  margin: 5px;
+  font-size: 16px;
+
+}
+
+/* Pledges block on project id page */
+
+.pledges-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pledges{
+  /* display: flex; */
+  justify-content: center;
+  border: 2px solid rgb(213, 189, 34);
+  width: 50%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.pledges-block1{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  border-bottom: 2px solid rgb(213, 189, 34);
+  padding: 20px;
+}
+
+.pledge-user-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+}
+
+
+
+.pledges-block1 h3{
+  margin: 0;
+  padding: 0;
+}
+
+.pledges-block2{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  
+}
+
+.pledges-block2a{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.pledge-list{
+  display: inline;
+  justify-content: center;
+  padding: 10px;
+  
+}
+
+.user-icon-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 211, 211);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.user-icon{
+  font-size: 30px;
+  color: #fff;
+}
+
+.user-pledge-background1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 20px;
+  border-radius: 15px;
+}
+
+.user-pledge-background2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 20px;
+  border-radius: 15px;
+}
+
+/* explore page */
+
+.projects-1{
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(171, 222, 151);
+  width: 100%;
+  height: 100%;
+ 
+
+}
+
+.projects-1b{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.projects-2{
+  display: inline-flexbox;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 700px;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  
+}
+
+
+
+
