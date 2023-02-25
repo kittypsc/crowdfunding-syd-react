@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { FaHeart } from 'react-icons/fa';
-import { FaUserPlus } from 'react-icons/fa';
+import { FaGift } from 'react-icons/fa';
 import well from "../assets/well.png";
 
 
@@ -47,7 +47,6 @@ function ProjectPage(){
                     <div><h4>{projectData.title}</h4></div>
                     <div><h6>{projectData.description}</h6></div>
                     <div><h3>$XXXX raised of ${projectData.goal} goal</h3></div>
-                    <div><p>Number of gifts received: XXX</p></div>
                     <div className="block2-btns">
                         <div className="body-btn"><button className="btn-3">Gift</button></div>
                         <div className="body-btn"><button className="btn-3">Share</button></div>
@@ -71,14 +70,15 @@ function ProjectPage(){
                                 {projectData.pledges.map((pledgesData, key) => {
                                     return (
                                     <div className="pledge-user-block">
-                                        <div className="user-icon-background"><FaUserPlus className="user-icon" /></div>
+                                        <div className="user-icon-background"><FaGift className="user-icon" /></div>
                                         <div>
+                                            
                                             <div className="user-pledge-background1" key={key}>
-                                                Gift from: {pledgesData.supporter}
+                                            <div>You have received a gift!</div>
 
                                             </div>
                                             <div className="user-pledge-background2" key={key}>
-                                                Gifted ${pledgesData.amount}
+                                                 ${pledgesData.amount}
                                             </div>
                                         </div>
                                     </div>

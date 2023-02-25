@@ -5,6 +5,7 @@ import Nav from './components/Nav/Navbar';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import ExplorePage from './pages/ExplorePage';
+import NewProject from './pages/NewProject';
 import "./App.css";
 import LoginPage from "./pages/LoginPage";
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <LoginPage />
+      },
+      {
+        path: '/project-form',
+        element: <NewProject />
       }
 
     ],

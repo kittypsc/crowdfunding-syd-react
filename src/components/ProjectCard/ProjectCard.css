@@ -1,7 +1,7 @@
 .projects-2 img{
     display: inline;
     justify-content: center;
-    width: 200px;
+    width: 300px;
     padding: 20px;
   }
 
@@ -17,22 +17,38 @@
     border-bottom: 2px solid #000;
     margin: 0;
     padding: 0;
+    
 
   }
 
   .all-projectsb{
-    padding: 10;
-    margin: 0;
+    display: inline-flexbox;
+    /* align-items: center; */
+    width: 300px;
+    height: 100px;
+    padding: 0;
+    padding-top: 0;
+    margin-top: 10px;
+    /* background-color: aquamarine; */
+  
   }
+
+  .all-projectsb h3{
+    padding-top: 0;
+
+  }
+
 
   .all-projectsb h6{
     color: rgb(245, 175, 189);
     font-size: 14px;
+    padding: 0;
 
   }
 
   .all-projectsb p{
     color: #000;
     font-size: 14px;
+
 
   }

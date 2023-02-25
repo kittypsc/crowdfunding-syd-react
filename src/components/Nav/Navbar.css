@@ -53,4 +53,14 @@
 
 .btn-1 a {
     color: #fff;
+    align-items: center;
+    justify-content: center;
 }
+
+.heart-icon2{
+    color:rgb(245, 175, 189);
+    font-size: 15px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
