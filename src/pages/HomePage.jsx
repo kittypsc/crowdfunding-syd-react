@@ -9,7 +9,7 @@ function HomePage(){
     return (
             <div>
                 <div className="body"><img src={ main } className="main" alt="graphic" /></div>
-                <div className="body-text"><p>Great a wishing well for your wedding today!</p></div>
+                <div className="body-text"><p>Create a wishing well for your wedding today!</p></div>
                 {/* <div className="body-btn"><button className="btn-2"><Link to="/createanaccount"><img src={ well } className="icon-well"/>Create a Wishin Well</Link></button></div> */}
                 
             </div>

@@ -87,8 +87,9 @@
   }
   
   .icon-well{
-    width: 15px;
-    height: 15px;
-    padding-right: 5px;
+    width: 18px;
+    height: 14px;
+    padding-right: 6px;
+    padding-top: 3px;
     align-items: center;
   }
