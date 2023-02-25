@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
+import well from "../../assets/well.png";
 import Logo from "../../assets/logo3.png"
-import ProjectCard from "../../components/ProjectCard";
+// import ProjectCard from "../../components/ProjectCard";
 import { FaHeart } from 'react-icons/fa';
 
 function Nav() {
@@ -22,14 +23,18 @@ function Nav() {
     let loginStuff;
     if (ShowLoginButton) {
         loginStuff = (<div>
+            <div className="nav-btns">
             <Link to="/login">Login</Link>
             <button className="btn-1"><Link to="/createanaccount">Create an account</Link></button>
+            </div>
+            
         </div>)
     }
     else {
         loginStuff = (<div>
             {/* <Link to='/project/${projectData.id}'>My Wishin Well</Link> */}
-            <button className="btn-1"><Link to="/explore"><FaHeart className="heart-icon2" />Enter Wishin Well</Link></button>
+            <button className="btn-1"><Link to="/explore"><FaHeart className="heart-icon2" />See Wishin Wells</Link></button>
+            <button className="btn-2"><Link to="/project-form"><img src={ well } className="icon-well"/>Create a Wishin Well</Link></button>
             {/* <Link to="/reviews">Reviews</Link> */}
             
         </div>)

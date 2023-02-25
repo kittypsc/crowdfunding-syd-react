@@ -44,6 +44,10 @@
     justify-items: left;
 }
 
+.nav-btns{
+    display: inline;
+}
+
 .btn-1 {
     padding: 10px 10px;
     background-color: rgb(34, 91, 41);
@@ -64,3 +68,27 @@
     padding-top: 5px;
 }
 
+.btn-2{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: rgb(159, 211, 124);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .btn-2 a {
+      color: rgb(34, 91, 41);
+      text-decoration: none;
+      font-weight: 900;
+      align-items: center;
+  }
+  
+  .icon-well{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+    align-items: center;
+  }

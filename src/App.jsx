@@ -8,6 +8,7 @@ import ExplorePage from './pages/ExplorePage';
 import NewProject from './pages/NewProject';
 import "./App.css";
 import LoginPage from "./pages/LoginPage";
+import Footer from "./components/Footer/Footer";
 
 const HeaderLayout = () => {
   return (
@@ -15,6 +16,7 @@ const HeaderLayout = () => {
       <ReviewBar />
       <Nav />
       <Outlet />
+      <Footer />
     </div>
   )
 }
