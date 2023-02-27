@@ -9,6 +9,7 @@ import NewProject from './pages/NewProject';
 import "./App.css";
 import LoginPage from "./pages/LoginPage";
 import Footer from "./components/Footer/Footer";
+import NewUserPage from "./pages/NewUser";
 
 const HeaderLayout = () => {
   return (
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/project-form',
         element: <NewProject />
+      },
+      {
+        path: '/createanaccount',
+        element: <NewUserPage/>
       }
 
     ],

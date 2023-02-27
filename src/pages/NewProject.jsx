@@ -6,4 +6,4 @@ function ProjectPage() {
 
 };
 
-export default CreateProjectForm;
+export default ProjectPage;

@@ -331,9 +331,11 @@ body {
 .projects-1b{
   display: flex;
   justify-content: center;
+  height: 550px;
 }
 
 .projects-2{
+  display: inline;
   align-items: center;
   justify-content: center;
   background-color: #fff;
