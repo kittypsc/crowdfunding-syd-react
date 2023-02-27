@@ -2,7 +2,7 @@ import React from 'react'
 import CreateUserForm from '../components/CreateUserForm/CreateUserForm';
 
 function NewUserPage() {
-    return <CreateProjectForm />
+    return <CreateUserForm />
 
 };
 

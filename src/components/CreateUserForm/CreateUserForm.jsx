@@ -1,18 +1,14 @@
 import React, { useState }from 'react';
 import { useNavigate } from "react-router-dom";
-import "./CreateProjectForm.css";
+import "./CreateUserForm.css";
 
-function NewProjectForm() {
+function NewUserForm() {
     const [ FormData, setFormData ] = useState({
-        title: '',
-        partner_name1: '',
-        partner_name2: '',
-        wedding_date: '',
-        description: '',
-        goal: '',
-        photo: '',
-        is_open: true,
-        
+        username: '',
+        email: '',
+        password: '',
+        first_name: '',
+        last_name: '',   
     }); 
     const navigate = useNavigate();
 
@@ -30,7 +26,7 @@ function NewProjectForm() {
 
             postData().then((response) => {
             console.log(response)
-            navigate(`/project/${response.id}`);
+            navigate(`/project-form`);
             // back-tick is used when you need add with string with a value
             });
 
@@ -38,7 +34,7 @@ function NewProjectForm() {
 
 const postData = async () => {
     const token = window.localStorage.getItem("token");
-    const response = await fetch(`${import.meta.env.VITE_API_URL}projects/`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}users/`, {
         method: "post",
         headers: {
             "Content-Type": "application/json",
@@ -62,34 +58,25 @@ const postData = async () => {
                                 <p>Please fill out the form below:</p>
                             </div>
                             <div className="new-proj-4a">
-                                <label htmlFor='title'>Name for Well:  </label>
-                                <input onChange={handleChange} type="text" id='title' placeholder='Name for wishin well'></input>
+                                <label htmlFor='username'>Username:  </label>
+                                <input onChange={handleChange} type="text" id='username' placeholder='Enter username'></input>
                             </div>
                              <div className="new-proj-4a">
-                                <label htmlFor='partner_name1'>Partner Name1:</label>
-                                <input onChange={handleChange} type="text" id='partner_name1' placeholder='Enter name'></input>
+                                <label htmlFor='Email'>Email:</label>
+                                <input onChange={handleChange} type="text" id='email' placeholder='Enter email'></input>
                             </div>
                             <div className="new-proj-4a">
-                                <label htmlFor='partner_name2'>Partner Name2:</label>
-                                <input onChange={handleChange} type="text" id='partner_name2' placeholder='Enter name'></input>
+                                <label htmlFor='password'>Password:</label>
+                                <input onChange={handleChange} type="text" id='password' placeholder='Enter password'></input>
                             </div>
                             <div className="new-proj-4a">
-                                <label htmlFor='wedding_date'>Wedding Date:</label>
-                                <input onChange={handleChange} type="text" id='wedding_date' placeholder='Enter date'></input>
+                                <label htmlFor='first_name'>First Name:</label>
+                                <input onChange={handleChange} type="text" id='first_name' placeholder='Enter first name'></input>
                             </div>
                             <div className="new-proj-4a">
-                                <label htmlFor='description'>Purpose of Well:</label>
-                                <input onChange={handleChange} type="text" id='description' placeholder='Description'></input>
+                                <label htmlFor='last_name'>Last Name:</label>
+                                <input onChange={handleChange} type="text" id='last_name' placeholder='Enter last name'></input>
                             </div>
-                            <div className="new-proj-4a">
-                                <label htmlFor='goal'>Target Amount $</label>
-                                <input onChange={handleChange} type="number" id='goal' placeholder='Enter amount of goal'></input>
-                            </div>
-                            <div className="new-proj-4a">
-                                <label htmlFor='image'>Profile Photo:</label>
-                                <input onChange={handleChange} type="url" id='image' placeholder='Paste image url'></input>
-                            </div>
-            
             
                             <div className="new-proj-4g"><button type="submit" onClick={handleSubmit} className="btn-4">Save</button></div>
 
@@ -106,4 +93,4 @@ const postData = async () => {
     )
 };
 
-export default NewProjectForm;
+export default NewUserForm;
