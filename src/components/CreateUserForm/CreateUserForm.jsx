@@ -33,12 +33,12 @@ function NewUserForm() {
     };
 
 const postData = async () => {
-    const token = window.localStorage.getItem("token");
+    // const token = window.localStorage.getItem("token");
     const response = await fetch(`${import.meta.env.VITE_API_URL}users/`, {
         method: "post",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `token ${token}`,
+            // "Authorization": `token ${token}`,
         },
         body: JSON.stringify(FormData) 
         // this is the line to pass in the state and then sent back to api
@@ -54,7 +54,7 @@ const postData = async () => {
                     <div className="new-proj-2">
                         <div className="new-proj-3">
                             <div className="new-proj-3b">
-                                <h2>My Wishin Well</h2>
+                                <h2>My User Account</h2>
                                 <p>Please fill out the form below:</p>
                             </div>
                             <div className="new-proj-4a">
