@@ -3,38 +3,49 @@ import { useNavigate } from "react-router-dom";
 import "./CreateProjectForm.css";
 
 function NewProjectForm() {
-    // const [ credentials, setCredentials ] = useState({
-    //     username: '',
-    //     password: '',
-    // }); 
+    const [ FormData, setFormData ] = useState({
+        title: '',
+        partner_name1: '',
+        partner_name2: '',
+        wedding_date: '',
+        description: '',
+        goal: '',
+        photo: '',
+        is_open: true,
+        
+    }); 
     const navigate = useNavigate();
 
         
     const handleChange = (event) => {
         const { id, value } = event.target;
-        setCredentials((prevCredentials) => ({
-            ...prevCredentials,
+        setFormData((prevFormData) => ({
+            ...prevFormData,
             [id]: value,
         }));
     };
    
     const handleSubmit = (event) => {
         event.preventDefault();
-        // if (credentials.username && credentials.password) {
+
             postData().then((response) => {
-            window.localStorage.setItem("token", response.token);
-            navigate("/explore");
+            console.log(response)
+            navigate(`/project/${response.id}`);
+            // back-tick is used when you need add with string with a value
             });
-        // }
+
     };
 
 const postData = async () => {
+    const token = window.localStorage.getItem("token");
     const response = await fetch(`${import.meta.env.VITE_API_URL}projects/`, {
         method: "post",
         headers: {
             "Content-Type": "application/json",
+            "Authorization": `token ${token}`,
         },
-        // body: JSON.stringify(credentials)
+        body: JSON.stringify(FormData) 
+        // this is the line to pass in the state and then sent back to api
     });
     return response.json();
     };
@@ -71,11 +82,11 @@ const postData = async () => {
                         </div>
                         <div>
                             <label htmlFor='goal'>goal: </label>
-                            <input onChange={handleChange} type="text" id='goal' placeholder='Enter amount of goal'></input>
+                            <input onChange={handleChange} type="number" id='goal' placeholder='Enter amount of goal'></input>
                         </div>
                         <div>
                             <label htmlFor='image'>photo:</label>
-                            <input onChange={handleChange} type="text" id='image' placeholder='Enter image url'></input>
+                            <input onChange={handleChange} type="url" id='image' placeholder='Enter image url'></input>
                         </div>
             
             
