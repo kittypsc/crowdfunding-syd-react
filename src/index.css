@@ -42,6 +42,7 @@ body {
 
 .total{
   color: #fff;
+  font-size: 21px;
 }
 /* .btn-2{
   justify-content: center;
@@ -349,6 +350,7 @@ body {
   margin: 30px;
   padding: 20px;
   border-radius: 15px;
+  
   
 }
 
