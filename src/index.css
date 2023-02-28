@@ -13,6 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  padding: 10px;
 
 }
 
@@ -332,6 +333,8 @@ body {
   display: flex;
   justify-content: center;
   height: 550px;
+  margin: 0;
+  border: 0;
 }
 
 .projects-2{

@@ -26,7 +26,7 @@ function NewUserForm() {
 
             postData().then((response) => {
             console.log(response)
-            navigate(`/project-form`);
+            navigate(`/login`);
             // back-tick is used when you need add with string with a value
             });
 

@@ -26,14 +26,14 @@ align-items: center;
     align-items: center;
     background-color: rgb(210, 209, 205);
     width: 100%;
-    height: 100%;
+    /* height: 600px; */
+    padding: 10px;
   
   }
   
   .new-proj-1b{
     display: flex;
     justify-content: center;
-    height: 500px;
   }
   
   .new-proj-2{
@@ -42,6 +42,7 @@ align-items: center;
     justify-content: center;
     background-color: #fff;
     width: 700px;
+    height: 450px;
     margin: 30px;
     padding: 20px;
     border-radius: 15px;

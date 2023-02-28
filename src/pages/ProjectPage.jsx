@@ -18,6 +18,14 @@ function ProjectPage(){
             setProjectData(data)
         })
     }, []);
+    console.log(projectData);
+
+    let totalAmount = 0
+    projectData.pledges.forEach((pledge) => {
+        totalAmount += pledge.amount
+    });
+
+
 
     return (
         <div>
@@ -46,7 +54,7 @@ function ProjectPage(){
                     <div className="profilepic"><img src={projectData.image}/></div>
                     <div><h4>{projectData.title}</h4></div>
                     <div><h6>{projectData.description}</h6></div>
-                    <div><h3>$XXXX raised of ${projectData.goal} goal</h3></div>
+                    <div><h3>${totalAmount} raised of ${projectData.goal} goal</h3></div>
                     <div className="block2-btns">
                         <div className="body-btn"><button className="btn-3">Gift</button></div>
                         <div className="body-btn"><button className="btn-3">Share</button></div>
