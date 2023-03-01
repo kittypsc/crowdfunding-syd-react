@@ -217,7 +217,13 @@ body {
   font-weight: 800;
   margin: 5px;
   font-size: 16px;
+  text-decoration: none;
 
+}
+
+.btn-3 a{
+  text-decoration: none;
+  color:rgb(34, 91, 41);
 }
 
 /* Pledges block on project id page */

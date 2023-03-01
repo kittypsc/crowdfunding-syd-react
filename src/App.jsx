@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import ExplorePage from './pages/ExplorePage';
 import NewProject from './pages/NewProject';
+import PledgePage from './pages/NewPledge';
 import "./App.css";
 import LoginPage from "./pages/LoginPage";
 import Footer from "./components/Footer/Footer";
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: '/createanaccount',
         element: <NewUserPage/>
+      },
+      {
+        path: '/gift',
+        element: <PledgePage/>
       }
 
     ],

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { FaHeart } from 'react-icons/fa';
 import { FaGift } from 'react-icons/fa';
 import well from "../assets/well.png";
+
 
 
 function ProjectPage(){
@@ -56,9 +57,9 @@ function ProjectPage(){
                     <div><h6>{projectData.description}</h6></div>
                     <div><h3><span className="total">${totalAmount}</span> raised of ${projectData.goal} goal</h3></div>
                     <div className="block2-btns">
-                        <div className="body-btn"><button className="btn-3">Gift</button></div>
+                        <div className="body-btn"><button className="btn-3"><Link to="/gift">Gift</Link></button></div>
                     </div>
-                    
+                   
                     
                 </div>
                 
